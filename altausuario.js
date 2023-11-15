@@ -55,10 +55,7 @@ do {
 
 
 // Mostrar los datos ingresados
-console.log("\nDatos del empleado:");
-console.log("Nombre: " + nombre);
-console.log("Edad: " + edad);
-console.log("DNI: " + dni);
+console.log("\nDatos de los empleado:");
 console.log("Suma de edades" + sumaEdades);
 console.log("Empleados Sexo Masculino: " + sexoMasculino);
 console.log("Empleados Sexo Femenino: " + sexoFemenino);
