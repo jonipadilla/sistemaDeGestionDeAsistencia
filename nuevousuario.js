@@ -15,10 +15,10 @@ function cargarUsuario() {
         dni: dniusuario
     };
 
-    // Agregamos el usuario al array
+    // Agrego el usuario al array
     usuarios.push(usuario);
 
-    // información en la página
+    // muestro información en la página
     mostrarInformacion(usuario);
 
     // array a formato JSON y almacenamos en localStorage
@@ -26,7 +26,7 @@ function cargarUsuario() {
 }
 
 
-// información del usuario en la página
+// muestro información del usuario en la página
 function mostrarInformacion(usuario) {
     var userInfoDiv = document.getElementById('userInfo');
 
