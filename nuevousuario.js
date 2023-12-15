@@ -28,9 +28,9 @@ function cargarUsuario() {
 
 // muestro información del usuario en la página
 function mostrarInformacion(usuario) {
-    var userInfoDiv = document.getElementById('userInfo');
+    var usuarioInfoDiv = document.getElementById('usuarioInfo');
 
     // información en el div
-    userInfoDiv.innerHTML = '<h2>Información del Último Usuario:</h2><p><strong>Nombre de usuario:</strong> ' + usuario.nombre + '</p><p><strong>Correo electrónico:</strong> ' + usuario.apellido + '</p> <p><strong>Nombre de usuario:</strong> ' + usuario.edad + '</p> <p><strong>Nombre de usuario:</strong> ' + usuario.dni + '</p>';
+    usuarioInfoDiv.innerHTML = '<h2>Información del Último Usuario:</h2><p><strong>Nombre de usuario:</strong> ' + usuario.nombre + '</p><p><strong>Correo electrónico:</strong> ' + usuario.apellido + '</p> <p><strong>Nombre de usuario:</strong> ' + usuario.edad + '</p> <p><strong>Nombre de usuario:</strong> ' + usuario.dni + '</p>';
 }
 
