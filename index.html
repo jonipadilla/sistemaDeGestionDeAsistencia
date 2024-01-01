@@ -7,46 +7,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Asistencia</title>
+
 </head>
+
 <body>
-    
+
     <section class="alta-formulario">
         <h2>Registrar Nuevo Empleado</h2>
         <div class="contenedor-foto-formulario">
 
             <div class="container">
-    <form class="form-group">
-        
-        <label for="nombreusuario">Nombre:</label>
-        <input type="text" class="form-control" id="nombreusuario" name="nombreusuario" placeholder="Ingresa tu nombre">
-      
-        <p class="mb-4"></p>
-     
-        <label for="apellidousuario">Apellido:</label>
-        <input type="text" class="form-control" id="apellidousuario" name="apellidousuario" placeholder="Ingresa tu apellido">
-    
-        <p class="mb-4"></p>
-    
-        <label for="edadusuario">Edad:</label>
-        <input type="number" class="form-control" id="edadusuario" name="edadusuario" placeholder="Ingresa tu edad">
-    
-        <p class="mb-4"></p>
-       
-        <label for="dniusuario">Número de dni:</label>
-        <input type="number" class="form-control" id="dniusuario" placeholder="Ingresa tu número de dni">
-    
-    
-        <p class="mb-4"></p>
-        <button type="button" class="btn btn-primary" onclick="cargarUsuario()">Aceptar</button>
-        <button type="submit" class="btn btn-primary">Cancelar</button>
-    
-    </form> 
-</div>
-</div>
-</section>
+                <form class="form-group">
+
+                    <label for="nombreusuario">Nombre:</label>
+                    <input type="text" class="form-control" id="nombreusuario" name="nombreusuario"
+                        placeholder="Ingresa tu nombre">
+
+                    <p class="mb-4"></p>
+
+                    <label for="apellidousuario">Apellido:</label>
+                    <input type="text" class="form-control" id="apellidousuario" name="apellidousuario"
+                        placeholder="Ingresa tu apellido">
+
+                    <p class="mb-4"></p>
+
+                    <label for="edadusuario">Edad:</label>
+                    <input type="number" class="form-control" id="edadusuario" name="edadusuario"
+                        placeholder="Ingresa tu edad">
+
+                    <p class="mb-4"></p>
+
+                    <label for="dniusuario">Número de dni:</label>
+                    <input type="number" class="form-control" id="dniusuario" placeholder="Ingresa tu número de dni">
+
+
+                    <p class="mb-4"></p>
+                    <button type="button" class="btn btn-primary" onclick="cargarUsuario()">Aceptar</button>
+                    <button type="submit" class="btn btn-primary">Cancelar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
     <div id="usuarioInfo"></div>
 
-<script src="./nuevousuario.js"></script>
+    <script src="./nuevousuario.js"></script>
 
 </body>
 </html>
