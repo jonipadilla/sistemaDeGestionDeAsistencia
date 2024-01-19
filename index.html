@@ -1,92 +1,59 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .square-btn {
-      width: 120px;
-      height: 120px;
-      margin: 8px;
-      transition: transform 0.3s;
-    }
 
-    .square-btn:hover {
-      transform: scale(1.05);
-    }
-  </style>
-  <title>Sistema De Asistencia</title>
+<style>
+  body {
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+</style>
+  <title>Inicio de Sesión</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  <a class="navbar-brand text-white" href="./index.html">Sistema de Asistencia de Personal</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownEmpleado" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Empleado
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownEmpleado">
-          <a class="dropdown-item" href="./altaEmpleado.html">Alta</a>
-          <!-- <a class="dropdown-item" href="#">Baja</a>
-          <a class="dropdown-item" href="#">Modificación</a> -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h2 class="text-center">Inicio de Sesión</h2>
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownElemento" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Elemento
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownElemento">
-          <a class="dropdown-item" href="./altaElemento.html">Alta</a>
-          <!-- <a class="dropdown-item" href="#">Baja</a>
-          <a class="dropdown-item" href="#">Modificación</a> -->
+        <div class="card-body">
+          <form id="loginForm" onsubmit="checkLogin(); return false;">
+            <div class="form-group">
+              <label for="username">Usuario:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <a href="./inicio.html"></a>
+                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+            </a>
+          </form>
         </div>
-      </li>
-    </ul>
-    
-  </div>
-        <button class="btn btn-secondary ml-right" onclick="logout()">
-          <i class="fa fa-sign-out-alt"></i> Cerrar Sesión
-        </button>s
-</nav>
-
-<div class="container-fluid mt-3">
-  <div class="row">
-    <div class="col-sm-2">
-      <a href="./asignarElementoAEmpleado.html">
-        <button class="btn btn-info square-btn d-block">Entrega de Elementos a Empleados</button>
-      </a>
-      <a href="./informeEmpleadoyElemento.html">
-      <button class="btn btn-success square-btn d-block">Listado de Empleados y Elementos</button>
-      </a>
-      <a href="#">
-      <button class="btn btn-warning square-btn d-block"></button>
-      </a>
-      <button class="btn btn-danger square-btn d-block"></button>
-    </div>
-    <div class="col-sm-7">
-      <img src="./img/alta-sector.jpg" alt="" class="rounded" width="700" height="600">
-    </div>
-    <div class="col-sm-3">
-      
+      </div>
     </div>
   </div>
 </div>
+<script src="inicioSesion.js"></script>
 
-<script src="cerrarSesion.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

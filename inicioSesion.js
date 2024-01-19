@@ -3,7 +3,7 @@ function checkLogin() {
   const passwordInput = document.getElementById('password').value;
 
   if (usernameInput === 'admin' && passwordInput === 'admin') {
-    window.location.href = 'index.html';
+    window.location.href = 'inicio.html';
   } else {
     alert('Credenciales incorrectas. Intenta de nuevo.');
   }
